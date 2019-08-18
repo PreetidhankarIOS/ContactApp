@@ -15,6 +15,17 @@
 		D41B40192309BCCA000D6210 /* ContactAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B40182309BCCA000D6210 /* ContactAppTests.swift */; };
 		D41B40242309BCCA000D6210 /* ContactAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B40232309BCCA000D6210 /* ContactAppUITests.swift */; };
 		D41B40322309BD93000D6210 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D41B40312309BD93000D6210 /* README.md */; };
+		D41B40362309C115000D6210 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B40352309C115000D6210 /* LocalizedStrings.swift */; };
+		D41B40392309C1BF000D6210 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D41B40382309C1BF000D6210 /* Localizable.strings */; };
+		D41B403C2309C325000D6210 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B403B2309C325000D6210 /* StringExtension.swift */; };
+		D41B403E2309C479000D6210 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B403D2309C479000D6210 /* UIApplicationExtension.swift */; };
+		D41B40402309C4C0000D6210 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B403F2309C4C0000D6210 /* UITableViewCellExtension.swift */; };
+		D41B40422309C4EA000D6210 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B40412309C4EA000D6210 /* UIViewControllerExtension.swift */; };
+		D41B40442309C5B0000D6210 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B40432309C5B0000D6210 /* UIDeviceExtension.swift */; };
+		D41B40462309C5D7000D6210 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B40452309C5D7000D6210 /* ViewExtension.swift */; };
+		D41B40482309C602000D6210 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B40472309C602000D6210 /* AppColors.swift */; };
+		D41B404A2309C638000D6210 /* AppFlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B40492309C638000D6210 /* AppFlowManager.swift */; };
+		D41B404C2309C699000D6210 /* AppGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B404B2309C699000D6210 /* AppGlobals.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +60,17 @@
 		D41B40232309BCCA000D6210 /* ContactAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAppUITests.swift; sourceTree = "<group>"; };
 		D41B40252309BCCA000D6210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D41B40312309BD93000D6210 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D41B40352309C115000D6210 /* LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
+		D41B40382309C1BF000D6210 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D41B403B2309C325000D6210 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		D41B403D2309C479000D6210 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		D41B403F2309C4C0000D6210 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		D41B40412309C4EA000D6210 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		D41B40432309C5B0000D6210 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		D41B40452309C5D7000D6210 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		D41B40472309C602000D6210 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		D41B40492309C638000D6210 /* AppFlowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowManager.swift; sourceTree = "<group>"; };
+		D41B404B2309C699000D6210 /* AppGlobals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGlobals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +122,11 @@
 		D41B40022309BCC9000D6210 /* ContactApp */ = {
 			isa = PBXGroup;
 			children = (
-				D41B40032309BCC9000D6210 /* AppDelegate.swift */,
+				D41B40342309C0D2000D6210 /* AppHelper */,
+				D41B40332309C0C4000D6210 /* AppDelegate */,
+				D41B40372309C18E000D6210 /* Resources */,
 				D41B40052309BCC9000D6210 /* ViewController.swift */,
+				D41B403A2309C2FA000D6210 /* Extensions */,
 				D41B40072309BCC9000D6210 /* Main.storyboard */,
 				D41B400A2309BCCA000D6210 /* Assets.xcassets */,
 				D41B400C2309BCCA000D6210 /* LaunchScreen.storyboard */,
@@ -126,6 +151,46 @@
 				D41B40252309BCCA000D6210 /* Info.plist */,
 			);
 			path = ContactAppUITests;
+			sourceTree = "<group>";
+		};
+		D41B40332309C0C4000D6210 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D41B40032309BCC9000D6210 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D41B40342309C0D2000D6210 /* AppHelper */ = {
+			isa = PBXGroup;
+			children = (
+				D41B40352309C115000D6210 /* LocalizedStrings.swift */,
+				D41B40472309C602000D6210 /* AppColors.swift */,
+				D41B40492309C638000D6210 /* AppFlowManager.swift */,
+				D41B404B2309C699000D6210 /* AppGlobals.swift */,
+			);
+			path = AppHelper;
+			sourceTree = "<group>";
+		};
+		D41B40372309C18E000D6210 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D41B40382309C1BF000D6210 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D41B403A2309C2FA000D6210 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D41B403B2309C325000D6210 /* StringExtension.swift */,
+				D41B403D2309C479000D6210 /* UIApplicationExtension.swift */,
+				D41B403F2309C4C0000D6210 /* UITableViewCellExtension.swift */,
+				D41B40412309C4EA000D6210 /* UIViewControllerExtension.swift */,
+				D41B40432309C5B0000D6210 /* UIDeviceExtension.swift */,
+				D41B40452309C5D7000D6210 /* ViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41B40392309C1BF000D6210 /* Localizable.strings in Resources */,
 				D41B400E2309BCCA000D6210 /* LaunchScreen.storyboard in Resources */,
 				D41B400B2309BCCA000D6210 /* Assets.xcassets in Resources */,
 				D41B40322309BD93000D6210 /* README.md in Resources */,
@@ -260,7 +326,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41B40462309C5D7000D6210 /* ViewExtension.swift in Sources */,
+				D41B403C2309C325000D6210 /* StringExtension.swift in Sources */,
 				D41B40062309BCC9000D6210 /* ViewController.swift in Sources */,
+				D41B40482309C602000D6210 /* AppColors.swift in Sources */,
+				D41B404C2309C699000D6210 /* AppGlobals.swift in Sources */,
+				D41B403E2309C479000D6210 /* UIApplicationExtension.swift in Sources */,
+				D41B40402309C4C0000D6210 /* UITableViewCellExtension.swift in Sources */,
+				D41B40362309C115000D6210 /* LocalizedStrings.swift in Sources */,
+				D41B404A2309C638000D6210 /* AppFlowManager.swift in Sources */,
+				D41B40442309C5B0000D6210 /* UIDeviceExtension.swift in Sources */,
+				D41B40422309C4EA000D6210 /* UIViewControllerExtension.swift in Sources */,
 				D41B40042309BCC9000D6210 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
