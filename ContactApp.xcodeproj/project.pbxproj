@@ -14,6 +14,7 @@
 		D41B400E2309BCCA000D6210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41B400C2309BCCA000D6210 /* LaunchScreen.storyboard */; };
 		D41B40192309BCCA000D6210 /* ContactAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B40182309BCCA000D6210 /* ContactAppTests.swift */; };
 		D41B40242309BCCA000D6210 /* ContactAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B40232309BCCA000D6210 /* ContactAppUITests.swift */; };
+		D41B40322309BD93000D6210 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D41B40312309BD93000D6210 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D41B401F2309BCCA000D6210 /* ContactAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41B40232309BCCA000D6210 /* ContactAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAppUITests.swift; sourceTree = "<group>"; };
 		D41B40252309BCCA000D6210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D41B40312309BD93000D6210 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				D41B40022309BCC9000D6210 /* ContactApp */,
 				D41B40172309BCCA000D6210 /* ContactAppTests */,
 				D41B40222309BCCA000D6210 /* ContactAppUITests */,
+				D41B40312309BD93000D6210 /* README.md */,
 				D41B40012309BCC9000D6210 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			files = (
 				D41B400E2309BCCA000D6210 /* LaunchScreen.storyboard in Resources */,
 				D41B400B2309BCCA000D6210 /* Assets.xcassets in Resources */,
+				D41B40322309BD93000D6210 /* README.md in Resources */,
 				D41B40092309BCC9000D6210 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
