@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ezh-VG-Bga">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="iUf-mL-TvO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ezh-VG-Bga" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A62-28-gs3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fq5-K3-Zdc" kind="relationship" relationship="rootViewController" id="trf-ER-dSY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VMS-Gb-KpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-690" y="-368"/>
+        </scene>
+        <!--Contact ListVC-->
+        <scene sceneID="Uol-tM-fhV">
+            <objects>
+                <viewController storyboardIdentifier="ContactListVC" id="fq5-K3-Zdc" customClass="ContactListVC" customModule="ContactApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZFS-H2-MKT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wyI-ho-QXA" customClass="GJTableView" customModule="ContactApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wyI-ho-QXA" firstAttribute="leading" secondItem="Kxn-uR-0du" secondAttribute="leading" id="3bH-nN-nuJ"/>
+                            <constraint firstItem="wyI-ho-QXA" firstAttribute="top" secondItem="Kxn-uR-0du" secondAttribute="top" id="ABC-q3-Tgz"/>
+                            <constraint firstItem="Kxn-uR-0du" firstAttribute="trailing" secondItem="wyI-ho-QXA" secondAttribute="trailing" id="GPQ-yK-JZ7"/>
+                            <constraint firstItem="Kxn-uR-0du" firstAttribute="bottom" secondItem="wyI-ho-QXA" secondAttribute="bottom" id="lWU-HK-hck"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kxn-uR-0du"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="p8e-RH-GOB"/>
+                    <connections>
+                        <outlet property="contactListTableView" destination="wyI-ho-QXA" id="kMz-0D-o5a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l0b-aY-KyV" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="654" y="-333"/>
+        </scene>
+    </scenes>
+</document>

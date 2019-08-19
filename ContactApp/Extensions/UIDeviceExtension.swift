@@ -58,7 +58,7 @@ extension UIDevice{
         var device : AVCaptureDevice!
         
         if #available(iOS 10.0, *) {
-            let videoDeviceDiscoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera, .builtInDuoCamera], mediaType: AVMediaType.video, position: .unspecified)
+            let videoDeviceDiscoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: .video, position: .back)
             let devices = videoDeviceDiscoverySession.devices
             device = devices.first!
             
@@ -142,31 +142,7 @@ extension UIDevice{
         return UIDevice.current.identifierForVendor!.uuidString
     }
     
-    class func flashOn(_ shouldFlashOn:Bool)
-    {
-        checkIfFlashAvailable { (success, device) in
-            
-            guard success else {return}
-            
-            let capturSession = AVCaptureSession()
-            capturSession.beginConfiguration()
-            
-            do{
-                
-                try device.lockForConfiguration()
-                device.torchMode = shouldFlashOn ? .on:.off
-                device.flashMode = shouldFlashOn ? .on:.off
-                device.unlockForConfiguration()
-                
-                capturSession.commitConfiguration()
-                
-            }
-            catch{
-                //DISABEL FLASH BUTTON HERE IF ERROR
-                printDebug("Device tourch Flash Error ");
-            }
-        }
-    }
+    
     static var remotePushToken:String?
     static let deviceType = "iOS"
     

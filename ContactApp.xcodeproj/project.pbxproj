@@ -7,9 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C018BEB230A6A1B00C54132 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018BEA230A6A1B00C54132 /* BaseVC.swift */; };
+		0C018BEE230A6AE900C54132 /* ContactListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018BED230A6AE900C54132 /* ContactListVC.swift */; };
+		0C018BF0230A6B1B00C54132 /* ContactListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018BEF230A6B1B00C54132 /* ContactListVM.swift */; };
+		0C018BF3230A6B4F00C54132 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018BF2230A6B4F00C54132 /* EndPoints.swift */; };
+		0C018BF6230A6BF900C54132 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018BF5230A6BF900C54132 /* Contact.swift */; };
+		0C018BF9230A6CA300C54132 /* GJTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018BF8230A6CA300C54132 /* GJTableView.swift */; };
+		0C018BFB230A6CD900C54132 /* GJTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018BFA230A6CD900C54132 /* GJTableViewCell.swift */; };
+		0C018C01230A6DE500C54132 /* EmptyScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C018BFF230A6DE500C54132 /* EmptyScreenView.xib */; };
+		0C018C02230A6DE500C54132 /* EmptyScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018C00230A6DE500C54132 /* EmptyScreenView.swift */; };
+		0C018C04230A869700C54132 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018C03230A869700C54132 /* AppFonts.swift */; };
+		0C018C08230A878400C54132 /* ContactListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018C06230A878400C54132 /* ContactListTableViewCell.swift */; };
+		0C018C09230A878400C54132 /* ContactListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C018C07230A878400C54132 /* ContactListTableViewCell.xib */; };
+		0C018C0B230A87B000C54132 /* GJDividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018C0A230A87AF00C54132 /* GJDividerView.swift */; };
+		0C018C0D230A883100C54132 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018C0C230A883100C54132 /* UIImageViewExtension.swift */; };
+		0C018C0F230A886C00C54132 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018C0E230A886C00C54132 /* UITableViewExtension.swift */; };
+		0C018C1B230A88F300C54132 /* PKIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018C12230A88F300C54132 /* PKIndicatorView.swift */; };
+		0C018C1C230A88F300C54132 /* PKBallRotateChaseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018C13230A88F300C54132 /* PKBallRotateChaseAnimation.swift */; };
+		0C018C1D230A88F300C54132 /* PKLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018C14230A88F300C54132 /* PKLoader.swift */; };
+		0C018C1E230A88F300C54132 /* PKBallSpinFadeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018C15230A88F300C54132 /* PKBallSpinFadeAnimation.swift */; };
+		0C018C1F230A88F300C54132 /* PKActivityIndicatorAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018C16230A88F300C54132 /* PKActivityIndicatorAnimation.swift */; };
+		0C018C20230A88F300C54132 /* PKIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018C17230A88F300C54132 /* PKIndicatorShape.swift */; };
+		0C018C21230A88F300C54132 /* PKLoaderSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018C18230A88F300C54132 /* PKLoaderSettings.swift */; };
+		0C018C22230A88F300C54132 /* PKCircleStrokeSpinAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018C19230A88F300C54132 /* PKCircleStrokeSpinAnimation.swift */; };
+		0C018C23230A88F300C54132 /* PKBallClipRotateAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C018C1A230A88F300C54132 /* PKBallClipRotateAnimation.swift */; };
+		0CB2FA40230A6EA500F72B9A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FA3F230A6EA500F72B9A /* Reachability.swift */; };
+		0CB2FA42230A6EAB00F72B9A /* PKNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FA41230A6EAB00F72B9A /* PKNetworking.swift */; };
+		0CB2FA46230A6EB700F72B9A /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FA44230A6EB700F72B9A /* APICaller.swift */; };
+		0CB2FA47230A6EB700F72B9A /* APICaller+Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FA45230A6EB700F72B9A /* APICaller+Contact.swift */; };
 		D41B40042309BCC9000D6210 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B40032309BCC9000D6210 /* AppDelegate.swift */; };
-		D41B40062309BCC9000D6210 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B40052309BCC9000D6210 /* ViewController.swift */; };
-		D41B40092309BCC9000D6210 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41B40072309BCC9000D6210 /* Main.storyboard */; };
 		D41B400B2309BCCA000D6210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D41B400A2309BCCA000D6210 /* Assets.xcassets */; };
 		D41B400E2309BCCA000D6210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41B400C2309BCCA000D6210 /* LaunchScreen.storyboard */; };
 		D41B40192309BCCA000D6210 /* ContactAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B40182309BCCA000D6210 /* ContactAppTests.swift */; };
@@ -26,6 +52,7 @@
 		D41B40482309C602000D6210 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B40472309C602000D6210 /* AppColors.swift */; };
 		D41B404A2309C638000D6210 /* AppFlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B40492309C638000D6210 /* AppFlowManager.swift */; };
 		D41B404C2309C699000D6210 /* AppGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B404B2309C699000D6210 /* AppGlobals.swift */; };
+		D41B404E2309CB5E000D6210 /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41B404D2309CB5E000D6210 /* Contact.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +73,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C018BEA230A6A1B00C54132 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		0C018BED230A6AE900C54132 /* ContactListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListVC.swift; sourceTree = "<group>"; };
+		0C018BEF230A6B1B00C54132 /* ContactListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListVM.swift; sourceTree = "<group>"; };
+		0C018BF2230A6B4F00C54132 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		0C018BF5230A6BF900C54132 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		0C018BF8230A6CA300C54132 /* GJTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJTableView.swift; sourceTree = "<group>"; };
+		0C018BFA230A6CD900C54132 /* GJTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJTableViewCell.swift; sourceTree = "<group>"; };
+		0C018BFF230A6DE500C54132 /* EmptyScreenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyScreenView.xib; sourceTree = "<group>"; };
+		0C018C00230A6DE500C54132 /* EmptyScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyScreenView.swift; sourceTree = "<group>"; };
+		0C018C03230A869700C54132 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		0C018C06230A878400C54132 /* ContactListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListTableViewCell.swift; sourceTree = "<group>"; };
+		0C018C07230A878400C54132 /* ContactListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactListTableViewCell.xib; sourceTree = "<group>"; };
+		0C018C0A230A87AF00C54132 /* GJDividerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJDividerView.swift; sourceTree = "<group>"; };
+		0C018C0C230A883100C54132 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		0C018C0E230A886C00C54132 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		0C018C12230A88F300C54132 /* PKIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKIndicatorView.swift; sourceTree = "<group>"; };
+		0C018C13230A88F300C54132 /* PKBallRotateChaseAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKBallRotateChaseAnimation.swift; sourceTree = "<group>"; };
+		0C018C14230A88F300C54132 /* PKLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKLoader.swift; sourceTree = "<group>"; };
+		0C018C15230A88F300C54132 /* PKBallSpinFadeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKBallSpinFadeAnimation.swift; sourceTree = "<group>"; };
+		0C018C16230A88F300C54132 /* PKActivityIndicatorAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKActivityIndicatorAnimation.swift; sourceTree = "<group>"; };
+		0C018C17230A88F300C54132 /* PKIndicatorShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKIndicatorShape.swift; sourceTree = "<group>"; };
+		0C018C18230A88F300C54132 /* PKLoaderSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKLoaderSettings.swift; sourceTree = "<group>"; };
+		0C018C19230A88F300C54132 /* PKCircleStrokeSpinAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKCircleStrokeSpinAnimation.swift; sourceTree = "<group>"; };
+		0C018C1A230A88F300C54132 /* PKBallClipRotateAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKBallClipRotateAnimation.swift; sourceTree = "<group>"; };
+		0CB2FA3F230A6EA500F72B9A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		0CB2FA41230A6EAB00F72B9A /* PKNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKNetworking.swift; sourceTree = "<group>"; };
+		0CB2FA44230A6EB700F72B9A /* APICaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		0CB2FA45230A6EB700F72B9A /* APICaller+Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APICaller+Contact.swift"; sourceTree = "<group>"; };
 		D41B40002309BCC9000D6210 /* ContactApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41B40032309BCC9000D6210 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D41B40052309BCC9000D6210 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D41B40082309BCC9000D6210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D41B400A2309BCCA000D6210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D41B400D2309BCCA000D6210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D41B400F2309BCCA000D6210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,6 +124,7 @@
 		D41B40472309C602000D6210 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		D41B40492309C638000D6210 /* AppFlowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowManager.swift; sourceTree = "<group>"; };
 		D41B404B2309C699000D6210 /* AppGlobals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGlobals.swift; sourceTree = "<group>"; };
+		D41B404D2309CB5E000D6210 /* Contact.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +152,105 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C018BE9230A687A00C54132 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C018BEC230A6AD000C54132 /* ContactList */,
+				0C018BEA230A6A1B00C54132 /* BaseVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0C018BEC230A6AD000C54132 /* ContactList */ = {
+			isa = PBXGroup;
+			children = (
+				0C018BED230A6AE900C54132 /* ContactListVC.swift */,
+				0C018BEF230A6B1B00C54132 /* ContactListVM.swift */,
+			);
+			path = ContactList;
+			sourceTree = "<group>";
+		};
+		0C018BF1230A6B3B00C54132 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0CB2FA43230A6EB700F72B9A /* APICaller */,
+				0CB2FA41230A6EAB00F72B9A /* PKNetworking.swift */,
+				0CB2FA3F230A6EA500F72B9A /* Reachability.swift */,
+				0C018BF2230A6B4F00C54132 /* EndPoints.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0C018BF4230A6B9B00C54132 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C018BF5230A6BF900C54132 /* Contact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C018BF7230A6C8400C54132 /* SupportingView */ = {
+			isa = PBXGroup;
+			children = (
+				0C018BFE230A6DE500C54132 /* EmptyScreens */,
+				0C018BF8230A6CA300C54132 /* GJTableView.swift */,
+				0C018C0A230A87AF00C54132 /* GJDividerView.swift */,
+				0C018BFA230A6CD900C54132 /* GJTableViewCell.swift */,
+			);
+			path = SupportingView;
+			sourceTree = "<group>";
+		};
+		0C018BFE230A6DE500C54132 /* EmptyScreens */ = {
+			isa = PBXGroup;
+			children = (
+				0C018BFF230A6DE500C54132 /* EmptyScreenView.xib */,
+				0C018C00230A6DE500C54132 /* EmptyScreenView.swift */,
+			);
+			path = EmptyScreens;
+			sourceTree = "<group>";
+		};
+		0C018C05230A874C00C54132 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				0C018C06230A878400C54132 /* ContactListTableViewCell.swift */,
+				0C018C07230A878400C54132 /* ContactListTableViewCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		0C018C10230A88E700C54132 /* AppLoader */ = {
+			isa = PBXGroup;
+			children = (
+				0C018C11230A88F300C54132 /* PKLoader */,
+			);
+			path = AppLoader;
+			sourceTree = "<group>";
+		};
+		0C018C11230A88F300C54132 /* PKLoader */ = {
+			isa = PBXGroup;
+			children = (
+				0C018C12230A88F300C54132 /* PKIndicatorView.swift */,
+				0C018C13230A88F300C54132 /* PKBallRotateChaseAnimation.swift */,
+				0C018C14230A88F300C54132 /* PKLoader.swift */,
+				0C018C15230A88F300C54132 /* PKBallSpinFadeAnimation.swift */,
+				0C018C16230A88F300C54132 /* PKActivityIndicatorAnimation.swift */,
+				0C018C17230A88F300C54132 /* PKIndicatorShape.swift */,
+				0C018C18230A88F300C54132 /* PKLoaderSettings.swift */,
+				0C018C19230A88F300C54132 /* PKCircleStrokeSpinAnimation.swift */,
+				0C018C1A230A88F300C54132 /* PKBallClipRotateAnimation.swift */,
+			);
+			path = PKLoader;
+			sourceTree = "<group>";
+		};
+		0CB2FA43230A6EB700F72B9A /* APICaller */ = {
+			isa = PBXGroup;
+			children = (
+				0CB2FA44230A6EB700F72B9A /* APICaller.swift */,
+				0CB2FA45230A6EB700F72B9A /* APICaller+Contact.swift */,
+			);
+			path = APICaller;
+			sourceTree = "<group>";
+		};
 		D41B3FF72309BCC9000D6210 = {
 			isa = PBXGroup;
 			children = (
@@ -122,14 +275,17 @@
 		D41B40022309BCC9000D6210 /* ContactApp */ = {
 			isa = PBXGroup;
 			children = (
-				D41B40342309C0D2000D6210 /* AppHelper */,
 				D41B40332309C0C4000D6210 /* AppDelegate */,
+				0C018BF4230A6B9B00C54132 /* Model */,
+				0C018BE9230A687A00C54132 /* View */,
+				0C018BF7230A6C8400C54132 /* SupportingView */,
+				D41B40342309C0D2000D6210 /* AppHelper */,
+				0C018BF1230A6B3B00C54132 /* Network */,
+				0C018C10230A88E700C54132 /* AppLoader */,
+				0C018C05230A874C00C54132 /* Xibs */,
 				D41B40372309C18E000D6210 /* Resources */,
-				D41B40052309BCC9000D6210 /* ViewController.swift */,
 				D41B403A2309C2FA000D6210 /* Extensions */,
-				D41B40072309BCC9000D6210 /* Main.storyboard */,
 				D41B400A2309BCCA000D6210 /* Assets.xcassets */,
-				D41B400C2309BCCA000D6210 /* LaunchScreen.storyboard */,
 				D41B400F2309BCCA000D6210 /* Info.plist */,
 			);
 			path = ContactApp;
@@ -168,6 +324,7 @@
 				D41B40472309C602000D6210 /* AppColors.swift */,
 				D41B40492309C638000D6210 /* AppFlowManager.swift */,
 				D41B404B2309C699000D6210 /* AppGlobals.swift */,
+				0C018C03230A869700C54132 /* AppFonts.swift */,
 			);
 			path = AppHelper;
 			sourceTree = "<group>";
@@ -175,6 +332,8 @@
 		D41B40372309C18E000D6210 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D41B404D2309CB5E000D6210 /* Contact.storyboard */,
+				D41B400C2309BCCA000D6210 /* LaunchScreen.storyboard */,
 				D41B40382309C1BF000D6210 /* Localizable.strings */,
 			);
 			path = Resources;
@@ -189,6 +348,8 @@
 				D41B40412309C4EA000D6210 /* UIViewControllerExtension.swift */,
 				D41B40432309C5B0000D6210 /* UIDeviceExtension.swift */,
 				D41B40452309C5D7000D6210 /* ViewExtension.swift */,
+				0C018C0C230A883100C54132 /* UIImageViewExtension.swift */,
+				0C018C0E230A886C00C54132 /* UITableViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -301,7 +462,9 @@
 				D41B400E2309BCCA000D6210 /* LaunchScreen.storyboard in Resources */,
 				D41B400B2309BCCA000D6210 /* Assets.xcassets in Resources */,
 				D41B40322309BD93000D6210 /* README.md in Resources */,
-				D41B40092309BCC9000D6210 /* Main.storyboard in Resources */,
+				0C018C01230A6DE500C54132 /* EmptyScreenView.xib in Resources */,
+				D41B404E2309CB5E000D6210 /* Contact.storyboard in Resources */,
+				0C018C09230A878400C54132 /* ContactListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,16 +490,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				D41B40462309C5D7000D6210 /* ViewExtension.swift in Sources */,
+				0C018BFB230A6CD900C54132 /* GJTableViewCell.swift in Sources */,
+				0C018C02230A6DE500C54132 /* EmptyScreenView.swift in Sources */,
+				0C018C22230A88F300C54132 /* PKCircleStrokeSpinAnimation.swift in Sources */,
 				D41B403C2309C325000D6210 /* StringExtension.swift in Sources */,
-				D41B40062309BCC9000D6210 /* ViewController.swift in Sources */,
+				0C018BF9230A6CA300C54132 /* GJTableView.swift in Sources */,
+				0C018BF6230A6BF900C54132 /* Contact.swift in Sources */,
+				0CB2FA46230A6EB700F72B9A /* APICaller.swift in Sources */,
+				0C018C21230A88F300C54132 /* PKLoaderSettings.swift in Sources */,
+				0C018BEE230A6AE900C54132 /* ContactListVC.swift in Sources */,
+				0CB2FA42230A6EAB00F72B9A /* PKNetworking.swift in Sources */,
+				0C018C20230A88F300C54132 /* PKIndicatorShape.swift in Sources */,
 				D41B40482309C602000D6210 /* AppColors.swift in Sources */,
+				0C018C04230A869700C54132 /* AppFonts.swift in Sources */,
+				0C018C1C230A88F300C54132 /* PKBallRotateChaseAnimation.swift in Sources */,
+				0C018C0B230A87B000C54132 /* GJDividerView.swift in Sources */,
 				D41B404C2309C699000D6210 /* AppGlobals.swift in Sources */,
 				D41B403E2309C479000D6210 /* UIApplicationExtension.swift in Sources */,
+				0C018C1B230A88F300C54132 /* PKIndicatorView.swift in Sources */,
+				0C018BF0230A6B1B00C54132 /* ContactListVM.swift in Sources */,
+				0CB2FA47230A6EB700F72B9A /* APICaller+Contact.swift in Sources */,
 				D41B40402309C4C0000D6210 /* UITableViewCellExtension.swift in Sources */,
 				D41B40362309C115000D6210 /* LocalizedStrings.swift in Sources */,
+				0CB2FA40230A6EA500F72B9A /* Reachability.swift in Sources */,
+				0C018BEB230A6A1B00C54132 /* BaseVC.swift in Sources */,
 				D41B404A2309C638000D6210 /* AppFlowManager.swift in Sources */,
+				0C018C0D230A883100C54132 /* UIImageViewExtension.swift in Sources */,
+				0C018C1E230A88F300C54132 /* PKBallSpinFadeAnimation.swift in Sources */,
+				0C018C1F230A88F300C54132 /* PKActivityIndicatorAnimation.swift in Sources */,
 				D41B40442309C5B0000D6210 /* UIDeviceExtension.swift in Sources */,
 				D41B40422309C4EA000D6210 /* UIViewControllerExtension.swift in Sources */,
+				0C018C1D230A88F300C54132 /* PKLoader.swift in Sources */,
+				0C018BF3230A6B4F00C54132 /* EndPoints.swift in Sources */,
+				0C018C0F230A886C00C54132 /* UITableViewExtension.swift in Sources */,
+				0C018C23230A88F300C54132 /* PKBallClipRotateAnimation.swift in Sources */,
+				0C018C08230A878400C54132 /* ContactListTableViewCell.swift in Sources */,
 				D41B40042309BCC9000D6210 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,14 +561,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D41B40072309BCC9000D6210 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D41B40082309BCC9000D6210 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D41B400C2309BCCA000D6210 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

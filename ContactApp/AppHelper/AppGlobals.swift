@@ -18,6 +18,8 @@ func printDebug<T>(_ obj: T) {
     //    print(obj)
 }
 
+typealias JsonDictionary = [String: Any]
+
 
 
 /**********************************
@@ -29,4 +31,32 @@ struct AppGlobals {
     static let shared = AppGlobals()
     private init() {}
     
+    func startLoading(animatingView: UIView? = nil) {
+        PKLoaderSettings.shared.indicatorColor = AppColors.themeGreen
+        PKLoaderSettings.shared.indicatorType = .ballRotateChase
+        PKLoader.shared.startAnimating(onView: animatingView)
+    }
+    
+    func stopLoading() {
+        PKLoader.shared.stopAnimating()
+    }
+    
 }
+
+
+enum AppPlaceholder {
+    static let profile = #imageLiteral(resourceName: "placeholder_photo")
+}
+
+/**********************************
+ 
+ Used to broadcast the
+ notification in the app
+ 
+ ***********************************/
+
+extension Notification.Name {
+    static let contactDetailsChanged = Notification.Name("ContactDetailsChanged")
+    static let contactDeleted = Notification.Name("contactDeleted")
+}
+

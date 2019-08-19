@@ -5,3 +5,9 @@
   Created by Pawan Kumar on 18/08/19.
   Copyright © 2019 Pawan Kumar. All rights reserved.
 */
+
+"Dash" = "--";
+"Group" = "Group";
+"noData" = "Sorry! You are lonely here.";
+"tryAgain" = "Try Again!!";
+

@@ -15,4 +15,8 @@ enum LocalizedStrings: String {
     }
     
     case Contact
+    case Dash
+    case Group
+    case noData
+    case tryAgain
 }
