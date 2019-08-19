@@ -12,7 +12,7 @@ import UIKit
 class ContactListVC: BaseVC {
     
     // MARK: - IBOutlet
-    @IBOutlet var contactListTableView: GJTableView!
+    @IBOutlet weak var contactListTableView: GJTableView!
     
     // MARK: - Properties
     // MARK: - Public
@@ -204,5 +204,6 @@ extension ContactListVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+           AppFlowManager.default.moveToContactDetailVC(contactId: self.viewModel.sections[indexPath.section].contacts[indexPath.row].id)
     }
 }

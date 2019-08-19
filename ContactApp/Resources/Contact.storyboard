@@ -59,5 +59,35 @@
             </objects>
             <point key="canvasLocation" x="654" y="-333"/>
         </scene>
+        <!--Contact DetailVC-->
+        <scene sceneID="C2x-Lx-Qd2">
+            <objects>
+                <viewController storyboardIdentifier="ContactDetailVC" id="uek-Uj-5Jt" customClass="ContactDetailVC" customModule="Contacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L8v-AE-xMT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="905-ZY-mvh" customClass="GJTableView" customModule="Contacts" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="905-ZY-mvh" firstAttribute="leading" secondItem="Wsg-bK-7nD" secondAttribute="leading" id="9SF-3K-cTG"/>
+                            <constraint firstItem="Wsg-bK-7nD" firstAttribute="bottom" secondItem="905-ZY-mvh" secondAttribute="bottom" id="AKz-az-aHa"/>
+                            <constraint firstItem="Wsg-bK-7nD" firstAttribute="trailing" secondItem="905-ZY-mvh" secondAttribute="trailing" id="AOm-DY-SxP"/>
+                            <constraint firstItem="905-ZY-mvh" firstAttribute="top" secondItem="Wsg-bK-7nD" secondAttribute="top" id="TrI-Jq-Vu7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wsg-bK-7nD"/>
+                    </view>
+                    <connections>
+                        <outlet property="contactDetailTableView" destination="905-ZY-mvh" id="Xym-yp-gEd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Bg-vo-10m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2367" y="-295"/>
+        </scene>
     </scenes>
 </document>

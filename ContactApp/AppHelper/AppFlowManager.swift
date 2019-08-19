@@ -26,4 +26,16 @@ class AppFlowManager {
 }
 
 
+//Contact flow
+extension AppFlowManager {
+    
+    func moveToContactDetailVC(contactId: Int) {
+        let obj = ContactDetailVC.instantiate(fromAppStoryboard: .Contact)
+        obj.viewModel.contactId = contactId
+        self.mainNavigationController?.pushViewController(obj, animated: true)
+    }
+    
+}
+
+
 

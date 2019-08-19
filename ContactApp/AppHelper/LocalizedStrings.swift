@@ -19,4 +19,10 @@ enum LocalizedStrings: String {
     case Group
     case noData
     case tryAgain
+    case Message
+    case Call
+    case Email
+    case Favourite
+    case Edit
+    case Mobile
 }

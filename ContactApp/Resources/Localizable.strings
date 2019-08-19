@@ -10,4 +10,9 @@
 "Group" = "Group";
 "noData" = "Sorry! You are lonely here.";
 "tryAgain" = "Try Again!!";
-
+"Mobile" = "Mobile";
+"Email" = "Email";
+"Favourite" = "Favourite";
+"Edit" = "Edit";
+"Message" = "Message";
+"Call" = "Call";
