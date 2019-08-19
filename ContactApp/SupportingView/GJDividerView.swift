@@ -15,7 +15,6 @@ import UIKit
 open class GJDividerView: UIView {
 
     // MARK: - View Life Cycle
-    
     // MARK: -
     
     init() {
@@ -34,9 +33,6 @@ open class GJDividerView: UIView {
     }
     
     // MARK: - Properties
-    
-    // MARK: - Private
-    
     // MARK: - Public
     
     var defaultHeight: CGFloat = 1.0 {
@@ -52,7 +48,6 @@ open class GJDividerView: UIView {
     }
     
     // MARK: - Methods
-    
     // MARK: - Private
     
     private func initialSetup() {

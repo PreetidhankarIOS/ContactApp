@@ -12,14 +12,17 @@ import UIKit
 class ContactListVC: BaseVC {
     
     // MARK: - IBOutlet
+    
     @IBOutlet weak var contactListTableView: GJTableView!
     
     // MARK: - Properties
     // MARK: - Public
+    
     let viewModel = ContactListVM()
     
     // MARK: - Private
     //used when there is no data
+    
     private lazy var noResultemptyView: EmptyScreenView = {
         let newEmptyView = EmptyScreenView()
         newEmptyView.vType = .noDataFound
@@ -28,6 +31,7 @@ class ContactListVC: BaseVC {
     }()
     
     // MARK: - Life Cycle
+    
     override func initialSetup() {
         self.contactListTableView.dataSource = self
         self.contactListTableView.delegate = self
@@ -63,6 +67,7 @@ class ContactListVC: BaseVC {
     
     // MARK: - Helper methods
     // MARK: - Action
+    
     @objc func groupButtonTapped() {
         printDebug("group Button Tapped")
     }
@@ -73,6 +78,7 @@ class ContactListVC: BaseVC {
     }
     
     // MARK: - Private
+    
     private func reloadList() {
         //hide/show the backgorund view if data is there or not
         contactListTableView.backgroundView?.isHidden = !self.viewModel.sections.isEmpty
@@ -162,6 +168,7 @@ extension ContactListVC: ContactListVMDelegate {
 }
 
 // MARK: - Empty screen view delegate methods
+
 extension ContactListVC: EmptyScreenViewDelegate {
     func firstButtonAction(sender: UIButton) {
         self.viewModel.fetchContacts()
@@ -169,6 +176,7 @@ extension ContactListVC: EmptyScreenViewDelegate {
 }
 
 // MARK: - UITableViewDataSource and UITableViewDelegate methods
+
 extension ContactListVC: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
         return self.viewModel.sections.count

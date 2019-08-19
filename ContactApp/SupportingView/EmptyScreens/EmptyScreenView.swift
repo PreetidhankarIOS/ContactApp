@@ -25,6 +25,7 @@ class EmptyScreenView: UIView {
     }
     
     //MARK:- properties -
+    
     weak var delegate: EmptyScreenViewDelegate?
     var vType: EmptyScreenViewType = .none {
         didSet {
@@ -33,6 +34,7 @@ class EmptyScreenView: UIView {
     }
     
     //MARK:- IBOutlets -
+    
     @IBOutlet private weak var contentView: UIView!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var mainImageView: UIImageView!
@@ -89,7 +91,8 @@ class EmptyScreenView: UIView {
         bottomButton.isHidden = true
     }
     
-    //MARK:- Private Function -
+    //MARK:- IB Action
+    
     @IBAction func firstButtonAction(_ sender: UIButton) {
         self.delegate?.firstButtonAction(sender: sender)
     }
@@ -126,7 +129,6 @@ extension EmptyScreenView {
         self.bottomButtonTopConstraint.constant = isHidden ? 0.0 : 10.0
     }
     
-    //MARK: - Tenant My Apartments -
     private func setupForNone() {
         self.hideFirstButton(isHidden: true)
         self.mainImageView.image = nil

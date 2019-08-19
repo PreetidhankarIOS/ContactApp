@@ -36,14 +36,17 @@ class GJTableViewCell: UITableViewCell {
     }
     
     /// Setup Fonts
+    
     @objc func setupFonts() {
     }
     
     /// Setup Colors
+    
     @objc func setupColors() {
     }
     
     /// Setup Texts
+    
     @objc func setupTexts() {
     }
     

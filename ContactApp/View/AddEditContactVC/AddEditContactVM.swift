@@ -27,11 +27,9 @@ class AddEditContactVM {
     }
     
     // MARK: - Properties
-    
     // MARK: - Public
     
     weak var delegate: AddEditContactVMDelegate?
-    
     var contact: Contact?
     var selectedImage: UIImage?
     var usingFor: UsingFor = .add
@@ -76,7 +74,6 @@ class AddEditContactVM {
         guard self.isVerified else {
             return
         }
-        
         APICaller.shared.callAddContatAPI(params: self.contact?.dictToSave ?? [:]) { [weak self] success, _, contact in
             guard let sSelf = self else { return }
             sSelf.delegate?.willAddContact()
@@ -95,7 +92,6 @@ class AddEditContactVM {
         guard self.isVerified else {
             return
         }
-        
         self.delegate?.willUpdateContact()
         APICaller.shared.callUpateContactDetailAPI(contactId: self.contact?.id ?? 0, params: self.contact?.dictToSave ?? [:]) { [weak self] success, _, contact in
             guard let sSelf = self else { return }
@@ -112,7 +108,6 @@ class AddEditContactVM {
     // Delete Contact Api
     func deleteContactAPI() {
         guard let con = self.contact else { return }
-        
         APICaller.shared.deleteContactAPI(forId: con.id) { [weak self] success, error in
             guard let sSelf = self else { return }
             

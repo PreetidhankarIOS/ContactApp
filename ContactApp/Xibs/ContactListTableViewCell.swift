@@ -12,9 +12,9 @@ class ContactListTableViewCell: GJTableViewCell {
 
     // MARK: - IBOutlets
     
-    @IBOutlet var profileImageView: UIImageView!
-    @IBOutlet var userNameLabel: UILabel!
-    @IBOutlet var favouriteButton: UIButton!
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var favouriteButton: UIButton!
     @IBOutlet weak var dividerView: GJDividerView!
     
     // MARK: - Properties

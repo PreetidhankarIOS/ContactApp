@@ -18,7 +18,7 @@ class ContactDetailVM {
 
     // MARK: - Properties
     // MARK: - Public
-
+    
     weak var delegate: ContactDetailVMDelgate?
     var contactDetail: Contact?
     var contactId: Int = 0

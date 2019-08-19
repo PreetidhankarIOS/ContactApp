@@ -15,7 +15,7 @@ import UIKit
 // a method that will be use in the app to print the logs
 // comment this method all the logs will be off at once
 func printDebug<T>(_ obj: T) {
-    //    print(obj)
+       print(obj)
 }
 
 typealias JsonDictionary = [String: Any]

@@ -16,7 +16,6 @@ protocol ContactListVMDelegate: class {
 class ContactListVM {
     
     // MARK: - Properties
-    
     // MARK: - Public
     
     weak var delegate: ContactListVMDelegate?

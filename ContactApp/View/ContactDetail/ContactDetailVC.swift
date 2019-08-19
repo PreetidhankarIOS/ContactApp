@@ -12,11 +12,11 @@ import UIKit
 class ContactDetailVC: BaseVC {
 
     // MARK: - IBOutlet
+    // MARK: -
     
-    @IBOutlet var contactDetailTableView: GJTableView!
+    @IBOutlet weak var contactDetailTableView: GJTableView!
     
     // MARK: - Properties
-    
     // MARK: -
     
     var contactDetailHeaderView = ContactDetailHeaderView()
@@ -31,9 +31,11 @@ class ContactDetailVC: BaseVC {
         self.contactDetailTableView.delegate = self
         self.registerXib()
         self.viewModel.fetchContactDetail()
-        
+
         NotificationCenter.default.addObserver(self, selector: #selector(self.contactDetailsChanged(_:)), name: .contactDetailsChanged, object: nil)
     }
+    
+    // MARK: - Override methods
     
     override func setupNavBar() {
         // setting up the custom navigation view
@@ -41,7 +43,7 @@ class ContactDetailVC: BaseVC {
         self.navigationController?.navigationBar.tintColor = AppColors.themeGreen
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: LocalizedStrings.Edit.localized, style: .plain, target: self, action: #selector(self.editButtonTapped))
         navigationItem.rightBarButtonItem?.tintColor = AppColors.themeGreen
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = UIColor.clear
@@ -55,12 +57,12 @@ class ContactDetailVC: BaseVC {
         guard let headerView = contactDetailTableView.tableHeaderView else {
             return
         }
-        
         headerView.frame.size = CGSize(width: UIDevice.screenWidth, height: 315.0)
         self.contactDetailTableView.tableHeaderView = headerView
         self.contactDetailTableView.layoutIfNeeded()
     }
     
+    //remove the notification observer
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
@@ -84,6 +86,7 @@ class ContactDetailVC: BaseVC {
     
     // method that will call when the `contactDetailsChanged` notification will be posted to the notification center
     // will refresh the list by adding/changing the new/updated contact without calling  the API
+    
     @objc private func contactDetailsChanged(_ note: Notification) {
         if let obj = note.object as? Contact {
             self.viewModel.contactDetail = obj
@@ -123,7 +126,7 @@ extension ContactDetailVC: UITableViewDataSource, UITableViewDelegate {
 
 extension ContactDetailVC: ContactDetailVMDelgate {
     func willFetchContactDetail() {
-        //
+        // handle case for before calling fetch contact detail
     }
     
     func fetchContactDetailSuccess() {
@@ -132,7 +135,7 @@ extension ContactDetailVC: ContactDetailVMDelgate {
     }
     
     func fetchContactDetailFail(errorMessage: String) {
-        // Hanle error cases
+        // Handle error cases
         printDebug(errorMessage)
     }
 }

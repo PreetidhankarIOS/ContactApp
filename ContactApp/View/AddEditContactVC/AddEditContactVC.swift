@@ -13,40 +13,35 @@ class AddEditContactVC: BaseVC {
 
     // MARK: - IBOutlet
     
-    @IBOutlet var addEditTableView: GJTableView!
+    @IBOutlet weak var addEditTableView: GJTableView!
     
     // MARK: - Properties
-    
     // MARK: -
     
     private let headerView: ContactAddEditHeaderView = ContactAddEditHeaderView.instanceFromNib()
-    
     let viewModel = AddEditContactVM()
     
     // MARK: - View Life cycle
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        
         guard let headerView = addEditTableView.tableHeaderView else {
             return
         }
-        
         headerView.frame.size = CGSize(width: UIDevice.screenWidth, height: 200.0)
         self.addEditTableView.tableHeaderView = headerView
         self.addEditTableView.layoutIfNeeded()
     }
     
-    // MARK: - Overrirde methods
+    // MARK: - Override methods
     
     override func initialSetup() {
         self.addEditTableView.dataSource = self
         self.addEditTableView.delegate = self
         self.addEditTableView.tableHeaderView = headerView
-        
         self.headerView.delegate = self
-        
         self.registerXib()
-        
         if self.viewModel.usingFor == .add {
             self.viewModel.contact = Contact(json: [:])
         }
@@ -82,6 +77,7 @@ class AddEditContactVC: BaseVC {
         }
     }
     
+    // set header data
     private func setHeaderData() {
         if let img = self.viewModel.selectedImage {
             self.headerView.profileImageView.image = img
@@ -90,6 +86,7 @@ class AddEditContactVC: BaseVC {
             self.headerView.profileImageView.setImage(from: self.viewModel.contact?.profileUrlPath ?? "", placeHolder: AppPlaceholder.profile, contentMode: .scaleAspectFill)
         }
     }
+    
     
     private func registerXib() {
         self.addEditTableView.registerCell(nibName: ContactDetailTableViewCell.reusableIdentifier)
@@ -122,7 +119,6 @@ extension AddEditContactVC: UITableViewDataSource, UITableViewDelegate {
             guard let cell = self.addEditTableView.dequeueReusableCell(withIdentifier: ContactDeleteTableCell.reusableIdentifier) as? ContactDeleteTableCell else {
                 fatalError("ContactDeleteTableCell not found")
             }
-            
             cell.deleteButtonAction = {
                 AppGlobals.shared.showAlert(title: LocalizedStrings.Confirmation.localized, message: LocalizedStrings.AreYouSureToDelete.localized, successButtonTitle: LocalizedStrings.Yes.localized, cancelButtonTitle: LocalizedStrings.No.localized) { isSuccess in
                     if isSuccess {
@@ -130,7 +126,6 @@ extension AddEditContactVC: UITableViewDataSource, UITableViewDelegate {
                     }
                 }
             }
-            
             return cell
         }
         else {
@@ -146,12 +141,10 @@ extension AddEditContactVC: UITableViewDataSource, UITableViewDelegate {
                 
             case 1: // Last Name
                 cell.configureCell(title: LocalizedStrings.LastName.localized, isEditingEnabled: true, inputText: self.viewModel.usingFor == .add ? "" : self.viewModel.contact?.lastName ?? "", placeHolder: LocalizedStrings.LastName.localized)
-                
                 return cell
             // Mobile
             case 2:
                 cell.configureCell(title: LocalizedStrings.Mobile.localized, isEditingEnabled: true, inputText: self.viewModel.usingFor == .add ? "" : self.viewModel.contact?.phoneNumber ?? "", placeHolder: LocalizedStrings.Mobile.localized)
-                
                 return cell
                 
             case 3: // email
@@ -177,10 +170,8 @@ extension AddEditContactVC: UIImagePickerControllerDelegate, UINavigationControl
         guard let selectedImage = info[.editedImage] as? UIImage else {
             fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
         }
-        
         self.viewModel.selectedImage = selectedImage
         self.setHeaderData()
-        
         picker.dismiss(animated: true, completion: nil)
     }
     
@@ -218,20 +209,19 @@ extension AddEditContactVC: AddEditContactVMDelegate {
     }
     
     func willAddContact() {
-        //
+        // handle case before calling will add contact Api
     }
     
     func addContactSuccess() {
-        //
         AppFlowManager.default.popToRootViewController(animated: true)
     }
     
     func addContactFail() {
-        //
+        // handle case  if add contact Api fail
     }
     
     func willUpdateContact() {
-        //
+        // handle case before calling will update contact Api
     }
     
     func updateContactSuccess() {
@@ -239,6 +229,6 @@ extension AddEditContactVC: AddEditContactVMDelegate {
     }
     
     func updateContactFail() {
-        //
+        //  handle case  if update contact Api fail
     }
 }

@@ -17,7 +17,6 @@ import UIKit
 
 enum AppColors {
     static let clear = UIColor.clear
-    
     static let white = UIColor.white
     
     /// RGB - 212, 212, 212
