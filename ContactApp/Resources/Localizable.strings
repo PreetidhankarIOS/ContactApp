@@ -16,3 +16,32 @@
 "Edit" = "Edit";
 "Message" = "Message";
 "Call" = "Call";
+"Error" = "Error";
+"FirstName" = "First Name";
+"LastName" = "Last Name";
+"DELETE" = "DELETE";
+"GotIt" = "Got it!";
+"Done" = "Done";
+"Save" = "Save";
+"Confirmation" = "Confirmation";
+"Yes" = "Yes";
+"No" = "No";
+"ChooseFromOptions" = "Choose from options";
+"ToSelectImage" = "to select an image";
+"PhotoLibrary" = "Photo Library";
+"Camera" = "Camera";
+"Group" = "Group";
+"noData" = "Didn't get anything";
+"tryAgain" = "Try Again!!";
+
+"typehere" = "type here...";
+
+//Erorr Messages
+"ContactUpdated" = "Contact updated successfully.";
+"FirstNameIsBlank" = "First name can't be blank";
+"LastNameIsBlank" = "Last name can't be blank";
+"PhoneIsBlank" = "Phone number can't be blank";
+"EmailIsBlank" = "Email can't be blank";
+"PhoneIsInValid" = "Phone number is invalid";
+"EmailIsInValid" = "Email is invalid";
+"AreYouSureToDelete" = "are you sure, you want to delete?";

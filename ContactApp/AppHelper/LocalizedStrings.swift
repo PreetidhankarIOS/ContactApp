@@ -23,6 +23,35 @@ enum LocalizedStrings: String {
     case Call
     case Email
     case Favourite
+    case Success
+    case OK
+    case Error
     case Edit
     case Mobile
+    case FirstName
+    case LastName
+    case typehere
+    case DELETE
+    case GotIt
+    case Done
+    case Save
+    case Confirmation
+    case Yes
+    case No
+    case ChooseFromOptions
+    case ToSelectImage
+    case PhotoLibrary
+    case Camera
+   
+    
+    
+    //error messages
+    case ContactUpdated
+    case FirstNameIsBlank
+    case LastNameIsBlank
+    case PhoneIsBlank
+    case EmailIsBlank
+    case PhoneIsInValid
+    case EmailIsInValid
+    case AreYouSureToDelete
 }

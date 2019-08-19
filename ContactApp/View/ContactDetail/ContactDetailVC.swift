@@ -10,10 +10,10 @@ import Foundation
 import UIKit
 
 class ContactDetailVC: BaseVC {
-    
+
     // MARK: - IBOutlet
     
-    @IBOutlet weak var contactDetailTableView: GJTableView!
+    @IBOutlet var contactDetailTableView: GJTableView!
     
     // MARK: - Properties
     
@@ -23,6 +23,7 @@ class ContactDetailVC: BaseVC {
     let viewModel = ContactDetailVM()
     
     // MARK: - Life cycle
+    
     override func initialSetup() {
         self.contactDetailHeaderView = ContactDetailHeaderView.instanceFromNib()
         self.contactDetailTableView.tableHeaderView = contactDetailHeaderView
@@ -31,11 +32,11 @@ class ContactDetailVC: BaseVC {
         self.registerXib()
         self.viewModel.fetchContactDetail()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(contactDetailsChanged(_:)), name: .contactDetailsChanged, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.contactDetailsChanged(_:)), name: .contactDetailsChanged, object: nil)
     }
     
     override func setupNavBar() {
-        //setting up the custom navigation view
+        // setting up the custom navigation view
         self.navigationController?.navigationBar.backgroundColor = UIColor.clear
         self.navigationController?.navigationBar.tintColor = AppColors.themeGreen
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: LocalizedStrings.Edit.localized, style: .plain, target: self, action: #selector(self.editButtonTapped))
@@ -60,6 +61,10 @@ class ContactDetailVC: BaseVC {
         self.contactDetailTableView.layoutIfNeeded()
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     func configureHeaderView() {
         self.contactDetailHeaderView.contactDetail = self.viewModel.contactDetail
     }
@@ -69,15 +74,16 @@ class ContactDetailVC: BaseVC {
     }
     
     @objc func editButtonTapped() {
+        AppFlowManager.default.moveToEditContactVC(contact: self.viewModel.contactDetail)
     }
     
     private func reloadData() {
-        contactDetailTableView.reloadData()
-        configureHeaderView()
+        self.contactDetailTableView.reloadData()
+        self.configureHeaderView()
     }
     
-    //method that will call when the `contactDetailsChanged` notification will be posted to the notification center
-    //will refresh the list by adding/changing the new/updated contact without calling  the API
+    // method that will call when the `contactDetailsChanged` notification will be posted to the notification center
+    // will refresh the list by adding/changing the new/updated contact without calling  the API
     @objc private func contactDetailsChanged(_ note: Notification) {
         if let obj = note.object as? Contact {
             self.viewModel.contactDetail = obj

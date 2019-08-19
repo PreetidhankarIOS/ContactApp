@@ -9,9 +9,8 @@
 import Foundation
 import UIKit
 
-//A model to hold the data of contact
+// A model to hold the data of contact
 struct Contact {
-    
     var id: Int = 0
     var firstName: String = ""
     var lastName: String = ""
@@ -19,73 +18,73 @@ struct Contact {
     var isFavourite: Bool = false
     var url: String = ""
     var email: String = ""
-    var phoneNumber: String  = ""
+    var phoneNumber: String = ""
     var createdAt: String = ""
     var updatedAt: String = ""
-    
-    //returns the contatc's profile pic by adding the server url
+
+    // returns the contatc's profile pic by adding the server url
     var profileUrlPath: String {
-        return "\(EndPoint.BASE_URL.rawValue)\(profilePic)"
+        return "\(EndPoint.BASE_URL.rawValue)\(self.profilePic)"
     }
-    
-    //returns the contatc's full name
+
+    // returns the contatc's full name
     var fullName: String {
-        if firstName.isEmpty {
-            return lastName
+        if self.firstName.isEmpty {
+            return self.lastName
         }
         else {
-            return "\(firstName) \(lastName)"
+            return "\(self.firstName) \(self.lastName)"
         }
     }
-    
-    //a dict that will be used when the contact is being add/update
-    var dictToSave: JsonDictionary{
+
+    // a dict that will be used when the contact is being add/update
+    var dictToSave: JsonDictionary {
         return ["first_name": self.firstName, "last_name": self.lastName, "email": self.email, "phone_number": self.phoneNumber]
     }
-    
+
     init(json: JsonDictionary) {
         if let obj = json["id"] {
             self.id = "\(obj)".toInt ?? 0
         }
-        
+
         if let obj = json["first_name"] {
             self.firstName = "\(obj)"
         }
-        
+
         if let obj = json["last_name"] {
             self.lastName = "\(obj)"
         }
-        
+
         if let obj = json["profile_pic"] {
             self.profilePic = "\(obj)"
         }
-        
+
         if let obj = json["favorite"] {
             self.isFavourite = "\(obj)".toBool
         }
-        
+
         if let obj = json["url"] {
             self.url = "\(obj)"
         }
-        
+
         // below properties used for Contact Detail
         if let obj = json["email"] {
             self.email = "\(obj)".isEmpty ? LocalizedStrings.Dash.localized : "\(obj)"
         }
-        
+
         if let obj = json["phone_number"] {
             self.phoneNumber = "\(obj)".isEmpty ? LocalizedStrings.Dash.localized : "\(obj)"
         }
-        
+
         if let obj = json["created_at"] {
             self.createdAt = "\(obj)"
         }
-        
+
         if let obj = json["updated_at"] {
             self.updatedAt = "\(obj)"
         }
     }
-    
+
     static func getModels(json: [JsonDictionary]) -> [Contact] {
         return json.map { Contact(json: $0) }
     }

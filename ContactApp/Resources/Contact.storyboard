@@ -62,12 +62,12 @@
         <!--Contact DetailVC-->
         <scene sceneID="C2x-Lx-Qd2">
             <objects>
-                <viewController storyboardIdentifier="ContactDetailVC" id="uek-Uj-5Jt" customClass="ContactDetailVC" customModule="Contacts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContactDetailVC" id="uek-Uj-5Jt" customClass="ContactDetailVC" customModule="ContactApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L8v-AE-xMT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="905-ZY-mvh" customClass="GJTableView" customModule="Contacts" customModuleProvider="target">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="905-ZY-mvh" customClass="GJTableView" customModule="ContactApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
@@ -88,6 +88,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Bg-vo-10m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2367" y="-295"/>
+        </scene>
+        <!--Add Edit ContactVC-->
+        <scene sceneID="bty-5g-gcn">
+            <objects>
+                <viewController storyboardIdentifier="AddEditContactVC" id="hrF-CL-iMo" customClass="AddEditContactVC" customModule="Contacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J1f-Cc-r92">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kzr-bw-uan" customClass="GJTableView" customModule="Contacts" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="B3i-9f-Wdp" firstAttribute="bottom" secondItem="Kzr-bw-uan" secondAttribute="bottom" id="4Nn-Mf-8NV"/>
+                            <constraint firstItem="Kzr-bw-uan" firstAttribute="top" secondItem="B3i-9f-Wdp" secondAttribute="top" id="nvQ-ZW-uOh"/>
+                            <constraint firstItem="Kzr-bw-uan" firstAttribute="leading" secondItem="B3i-9f-Wdp" secondAttribute="leading" id="svZ-av-CHh"/>
+                            <constraint firstItem="B3i-9f-Wdp" firstAttribute="trailing" secondItem="Kzr-bw-uan" secondAttribute="trailing" id="zfc-4A-6Ta"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B3i-9f-Wdp"/>
+                    </view>
+                    <connections>
+                        <outlet property="addEditTableView" destination="Kzr-bw-uan" id="gCy-bO-knT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgS-70-dSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="91" y="613"/>
         </scene>
     </scenes>
 </document>

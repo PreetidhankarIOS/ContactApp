@@ -45,6 +45,10 @@ class ContactListVC: BaseVC {
         self.viewModel.delegate = self
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     override func setupNavBar() {
         //setting up the custom navigation view
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: LocalizedStrings.Group.localized, style: .plain, target: self, action: #selector(self.groupButtonTapped))
@@ -65,6 +69,7 @@ class ContactListVC: BaseVC {
     
     @objc func addButtonTapped() {
         printDebug("Add Button Tapped")
+        AppFlowManager.default.moveToAddContactVC()
     }
     
     // MARK: - Private

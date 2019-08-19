@@ -8,24 +8,24 @@
 
 import Foundation
 
-protocol ContactDetailVMDelgate: class  {
+protocol ContactDetailVMDelgate: class {
     func willFetchContactDetail()
     func fetchContactDetailSuccess()
     func fetchContactDetailFail(errorMessage: String)
 }
 
 class ContactDetailVM {
-    
+
     // MARK: - Properties
     // MARK: - Public
-    
-    weak var delegate : ContactDetailVMDelgate?
+
+    weak var delegate: ContactDetailVMDelgate?
     var contactDetail: Contact?
     var contactId: Int = 0
-    
+
     func fetchContactDetail() {
         delegate?.willFetchContactDetail()
-        APICaller.shared.callGetContactDetailAPI(contactId:contactId) { [weak self] (success, message, contact) in
+        APICaller.shared.callGetContactDetailAPI(contactId: contactId) { [weak self] success, message, contact in
             guard let sSelf = self else { return }
             if success {
                 sSelf.contactDetail = contact
@@ -39,4 +39,3 @@ class ContactDetailVM {
         }
     }
 }
-

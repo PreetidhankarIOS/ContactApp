@@ -41,6 +41,30 @@ struct AppGlobals {
         PKLoader.shared.stopAnimating()
     }
     
+    func showAlert(title:String, message: String , successButtonTitle:String, cancelButtonTitle:String , onCompletion completion: @escaping (Bool)->Void){
+        
+        let alertController = UIAlertController (title: title, message: message, preferredStyle: .alert)
+        let doneAction = UIAlertAction(title:successButtonTitle, style: .default) { (_) -> Void in
+            completion(true)
+        }
+        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .destructive) { (_) in
+            completion(false)
+        }
+        alertController.addAction(cancelAction)
+        alertController.addAction(doneAction)
+        UIApplication.topViewController()?.present(alertController, animated: true, completion: nil);
+    }
+    
+    func showAlert(title:String, message: String , buttonTitle:String, onCompletion completion: (()->Void)?){
+        
+        let alertController = UIAlertController (title: title, message: message, preferredStyle: .alert)
+        let doneAction = UIAlertAction(title:buttonTitle, style: .cancel) { (_) -> Void in
+            completion?()
+        }
+        alertController.addAction(doneAction)
+        UIApplication.topViewController()?.present(alertController, animated: true, completion: nil);
+    }
+    
 }
 
 
