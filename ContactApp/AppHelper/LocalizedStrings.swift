@@ -54,4 +54,5 @@ enum LocalizedStrings: String {
     case PhoneIsInValid
     case EmailIsInValid
     case AreYouSureToDelete
+    
 }

@@ -20,7 +20,6 @@ class BaseVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.bindViewModel()
-        
         self.initialSetup()
         self.setupFonts()
         self.setupTexts()

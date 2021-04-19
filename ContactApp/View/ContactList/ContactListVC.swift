@@ -207,12 +207,9 @@ extension ContactListVC: UITableViewDataSource, UITableViewDelegate {
         guard let cell = self.contactListTableView.dequeueReusableCell(withIdentifier: ContactListTableViewCell.reusableIdentifier, for: indexPath) as? ContactListTableViewCell else {
             fatalError("ContactListTableViewCell not found")
         }
-        
         let section = self.viewModel.sections[indexPath.section]
         cell.contact = section.contacts[indexPath.row]
-        
         cell.dividerView.isHidden = (section.contacts.count == (indexPath.row + 1))
-        
         return cell
     }
     

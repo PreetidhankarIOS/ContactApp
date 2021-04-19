@@ -90,8 +90,8 @@ class ContactDetailHeaderView: UIView {
     }
     
     private func setUpFont() {
-        self.userNameLabel.font = AppFonts.Bold.withSize(18.0)
         
+        self.userNameLabel.font = AppFonts.Bold.withSize(18.0)
         self.messageLabel.font = AppFonts.Regular.withSize(11.0)
         self.callLabel.font = AppFonts.Regular.withSize(11.0)
         self.emailLabel.font = AppFonts.Regular.withSize(11.0)
@@ -99,8 +99,8 @@ class ContactDetailHeaderView: UIView {
     }
     
     private func setUpColor() {
-        self.userNameLabel.textColor = AppColors.userNameColor
         
+        self.userNameLabel.textColor = AppColors.userNameColor
         self.messageLabel.text = LocalizedStrings.Message.localized
         self.callLabel.text = LocalizedStrings.Call.localized
         self.emailLabel.text = LocalizedStrings.Email.localized
